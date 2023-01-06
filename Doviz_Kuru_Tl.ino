@@ -72,5 +72,5 @@ Serial.println(" TL");
 
   https.end();
   // Bir sonraki istek için bekleme süresi
-  delay(13000); // 1 dakika
+  delay(10000); // 1 dakika
 }
