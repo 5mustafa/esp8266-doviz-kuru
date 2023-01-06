@@ -23,7 +23,7 @@ void setup() {
 void loop() {
   // HTTPS isteği gönder
     WiFiClientSecure client;
-    client.setInsecure(); //the magic line, use with caution
+    client.setInsecure(); 
     HTTPClient https;
   https.begin(client, "https://api.genelpara.com/embed/doviz.json"); // API adresini buraya yazın
   int httpCode = https.GET();
