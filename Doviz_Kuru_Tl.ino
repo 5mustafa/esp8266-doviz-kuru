@@ -61,6 +61,10 @@ const char* USD_alis = USD["alis"];
 JsonObject EUR = doc["EUR"];
 const char* EUR_satis = EUR["satis"];
 const char* EUR_alis = EUR["alis"]; 
+  
+JsonObject GA = doc["GA"];
+const char* GA_satis = GA["satis"];
+const char* GA_alis = GA["alis"];   
 
 Serial.print("Dolar satış:");
 Serial.print(USD_satis);
@@ -69,6 +73,10 @@ Serial.println(" TL");
 Serial.print("EURO satış:");
 Serial.print(EUR_satis);
 Serial.println(" TL");
+  
+Serial.print("Altın satış:");
+Serial.print(GA_satis);
+Serial.println(" TL");  
 
   https.end();
   // Bir sonraki istek için bekleme süresi
