@@ -9,7 +9,8 @@ const char* password = "your-password";
 
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(115200); //Seri monitörü başlatır
+  //Wifi bağlantısı kurma
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
@@ -17,7 +18,6 @@ void setup() {
   }
   Serial.println("");
   Serial.println("WiFi bağlandı!");
-
 }
 
 void loop() {
@@ -53,7 +53,8 @@ if (error) {
   Serial.println(error.f_str());
   return;
 }
-
+  
+//Değeler değişkenlere atanıp seri monitöre yazdırılır  
 JsonObject USD = doc["USD"];
 const char* USD_satis = USD["satis"];
 const char* USD_alis = USD["alis"]; 
