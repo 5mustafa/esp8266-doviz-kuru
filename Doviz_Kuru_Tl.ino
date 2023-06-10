@@ -1,12 +1,11 @@
 #include <ArduinoJson.h>
-  #include <ESP8266WiFi.h>
-  #include <ESP8266HTTPClient.h>
-  #include <WiFiClient.h>
-  #include <WiFiClientSecureBearSSL.h>
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
+#include <WiFiClient.h>
+#include <WiFiClientSecureBearSSL.h>
 
 const char* ssid     = "your-ssid";
 const char* password = "your-password";
-
 
 void setup() {
   Serial.begin(115200); //Seri monitörü başlatır
@@ -41,8 +40,6 @@ void loop() {
 
   // İstekten dönen veriyi yazdır
   Serial.println(response);
-
-
 
 DynamicJsonDocument doc(1536);
 
